@@ -429,3 +429,161 @@ foreach($result as $item){
 }
 echo json_encode($data, JSON_PRETTY_PRINT);
 ?>
+
+
+activity.xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    >
+    <EditText
+        android:id="@+id/etNameUserInput"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:hint="Enter your name"
+        android:textColor="#000000"
+        />
+    <EditText
+        android:id="@+id/etPhoneUserInput"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:hint="Enter your phone"
+        android:textColor="#000000"
+        />
+    <Button
+        android:id="@+id/btnInsertUserInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insert"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search Name"/>
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search"/>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        />
+</LinearLayout>
+
+
+
+
+layout.xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/tvIDLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ID: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:id="@+id/tvNameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        />
+    <TextView
+        android:id="@+id/tvPhoneLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btnUpdateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="UPDATE"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            />
+        <Button
+            android:id="@+id/btnDeleteLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="DELETE"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+layout2.xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <EditText
+        android:id="@+id/etNameUpdateInput"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:hint="Enter your name"
+        android:textColor="#000000"
+        />
+    <EditText
+        android:id="@+id/etPhoneUpdateInput"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:hint="Enter your phone"
+        android:textColor="#000000"
+        />
+    <Button
+        android:id="@+id/btnSaveUpdateInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+</LinearLayout>
+
+
